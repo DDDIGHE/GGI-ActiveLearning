@@ -26,7 +26,7 @@ Requires PyTorch, PyTorch Geometric, and related libraries (torch-scatter, etc.)
 
 ```bash
 # Example: run active learning with MC Dropout selection on QM9
-python zzz.py --device 0 --selection_method mcdrop --cycle 0 --expt 1
+python main.py --device 0 --selection_method mcdrop --cycle 0 --expt 1
 
 # Available selection methods:
 #   random, mcdrop, coreset, lloss, unc_div (ours)
@@ -41,7 +41,7 @@ See `run.sh` for more examples.
 ```
 al/                  # Active learning methods (selection, loss prediction, etc.)
 dig/                 # DIG library (3D graph models: SphereNet, SchNet, DimeNet++, etc.)
-zzz.py               # Main entry point
+main.py               # Main entry point
 ```
 
 ## Citation
